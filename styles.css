@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(3, 43, 77);
+}
+
+#calculator {
+    background-color: white;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding: 8px;
+}
+
+#buttons button {
+    background-color: white;
+    color: rgb(32, 41, 120);
+    font-size: 36px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+    border: solid 2px;
+}
+
+#buttons button:hover {
+    opacity: 70%;
+}
+
+#buttons button:active {
+    border-color: rgb(0, 72, 136);
+    color: rgba(0, 72, 136);
+    opacity: 85%;
+}
