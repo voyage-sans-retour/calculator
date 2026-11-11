@@ -1,5 +1,20 @@
 body {
     background-color: rgb(3, 43, 77);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    color: azure;
+}
+
+#set {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #calculator {
@@ -27,11 +42,34 @@ body {
 }
 
 #buttons button:hover {
-    opacity: 70%;
+    opacity: 60%;
 }
 
 #buttons button:active {
     border-color: rgb(0, 72, 136);
     color: rgba(0, 72, 136);
     opacity: 85%;
+}
+
+#display {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    height: 90px;
+    text-align: right;
+    border: none;
+    color: rgba(0, 72, 136);
+    font-size: 36px;
+}
+
+#log {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#log h2 {
+    color: rgba(0, 72, 136);
+    text-align: center;
 }
