@@ -1,3 +1,5 @@
+// figured out how to display in log, now must figure out how to print in log on new line and save old values in log
+
 const buttonValues = [
     "-/+", "√", "%", "AC",
     "1", "2", "3", "÷",
@@ -21,6 +23,7 @@ function clearAll() {
 const clear = "AC";
 
 const display = document.getElementById("display");
+const logText = document.getElementById("log-text");
 
 for (let i = 0; i < buttonValues.length; i++) {
     let value = buttonValues[i];
@@ -61,15 +64,19 @@ for (let i = 0; i < buttonValues.length; i++) {
                 else if (operator == "-") {
                     display.value = numA - numB;
                 }
+
+                logText.value = `${numA} ${operator} ${numB} = ${display.value}`;
             }
             else {
                 operator = value;
                 A = display.value;
                 display.value = "";
+                
             }
         }
         else if (topMenu.includes(value)) {
             if (value == "√") {
+                //numA = display.value; must fix log on this
                 display.value = Number(display.value) ** 0.5;
             }
             else if (value == "%") {
