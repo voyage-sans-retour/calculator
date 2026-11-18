@@ -61,15 +61,3 @@ h1 {
     color: rgba(0, 72, 136);
     font-size: 36px;
 }
-
-#log {
-    height: 400px;
-    width: 400px;
-    background-color: white;
-    border-radius: 15px;
-}
-
-#log h2 {
-    color: rgba(0, 72, 136);
-    text-align: center;
-}

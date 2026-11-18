@@ -64,8 +64,6 @@ for (let i = 0; i < buttonValues.length; i++) {
                 else if (operator == "-") {
                     display.value = numA - numB;
                 }
-
-                logText.value = `${numA} ${operator} ${numB} = ${display.value}`;
             }
             else {
                 operator = value;
